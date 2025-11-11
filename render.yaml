@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: scge-backend
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: npm run --web
+    autoDeploy: true
+    repo: https://gitlab.com/platinimichell/scge.git
