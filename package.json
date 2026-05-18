@@ -1,0 +1,26 @@
+{
+  "name": "projeto_integrador_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix server\" \"npm run start --prefix client\"",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "jest": "^30.3.0"
+  },
+  "private": true,
+  "dependencies": {
+    "expo-file-system": "^19.0.17",
+    "expo-sharing": "^14.0.7",
+    "react-dom": "19.1.0",
+    "react-native-web": "^0.21.0",
+    "xlsx": "^0.18.5"
+  }
+}
